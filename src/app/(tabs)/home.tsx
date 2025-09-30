@@ -1,13 +1,14 @@
 import { View } from "react-native";
-import { AppText } from "@/components/AppText";
+import { useRouter } from "expo-router";
 import React from "react";
 import { Button } from "react-native-paper";
 
 export default function HomeScreen() {
+    const router = useRouter();
   return (
-    <View className="justify-center flex-1 p-4">
+    <View style={{ justifyContent: "center", flex: 1, padding: 16 }}>
       <Button icon="plus" mode="elevated">Add Item</Button>
-      <Button icon="arrow-left" mode="elevated">Return to market selection</Button>
+      <Button icon="arrow-left" mode="elevated" onPress={() => router.replace("../listExpoEvents")}>Return to market selection</Button>
     </View>
   );
 }

@@ -10,7 +10,7 @@ import { Button, Text } from "react-native-paper";
 export default function ExpoEventsScreen() {
   const router = useRouter();
   return (
-    <View className="justify-center flex-1 p-4">
+    <View style={{ justifyContent: "center", flex: 1, padding: 16 }}>
       <Button
         mode="contained"
         onPress={() => router.replace("/(tabs)/home")}
