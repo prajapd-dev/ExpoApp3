@@ -9,6 +9,14 @@ export default function SignUpScreen() {
   const [password, setPassword] = React.useState("");
   const [confirmPassword, setConfirmPassword] = React.useState("");
 
+
+  /* 
+  checks: 
+  1. all fields are filled
+  2. password and confirm password match
+  3. handle correct email format (basic check)
+  4. on submit - figure out how aws cognito fits here
+  */
   const handleSignUp = () => {
     // Handle sign-up logic here
     if (!username || !email || !password || !confirmPassword) {
