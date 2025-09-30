@@ -3,8 +3,6 @@ import "../../global.css";
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 
-
-
 const isLoggedIn = true; // Change this to true to simulate a logged-in user
 
 export default function RootLayout() {
